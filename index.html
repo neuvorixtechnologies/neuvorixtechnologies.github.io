@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neuvorix Technologies – Remote IT support for small businesses across India</title>
+<meta name="description" content="Neuvorix Technologies provides remote IT support for small offices and businesses across India: Microsoft 365 and email, network troubleshooting, endpoint security, backup and monthly or annual support contracts. GST-registered.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpolygon points='14,0 50,0 106,120 70,120' fill='%230E9F9A'/%3E%3Crect x='0' y='0' width='32' height='120' rx='7' fill='%231E3FAE'/%3E%3Crect x='88' y='0' width='32' height='120' rx='7' fill='%231E3FAE'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF; --mist:#EEF2FA; --ink:#0F1B3D; --text:#2A3654; --muted:#56627F;
+  --blue:#1E3FAE; --teal:#0E9F9A; --line:#D7DEEE; --btn-text:#FFFFFF;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#0C1530; --mist:#121E40; --ink:#F2F5FC; --text:#D3DAEC; --muted:#9AA6C4;
+    --blue:#7D96F2; --teal:#35C9C2; --line:#24325C; --btn-text:#0C1530;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:'Public Sans','Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.6}
+a{color:var(--blue)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Sora','Segoe UI',Arial,sans-serif;color:var(--ink);line-height:1.15;margin:0}
+header{padding:22px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-family:'Sora',sans-serif;font-size:20px;letter-spacing:.02em;color:var(--ink)}
+.brand span{display:block;font-size:11px;letter-spacing:.42em;color:var(--blue);font-weight:600;margin-top:2px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.top a.call{font-weight:600;text-decoration:none;white-space:nowrap}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 88px}
+.hero .mark{position:absolute;right:-90px;top:10px;width:520px;height:520px;opacity:.95;pointer-events:none}
+.hero-copy{position:relative;max-width:600px}
+.hero h1{font-size:clamp(36px,6vw,60px);letter-spacing:-.01em}
+.hero p{font-size:19px;color:var(--muted);max-width:520px;margin:22px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.primary{background:var(--blue);color:var(--btn-text)}
+.btn.secondary{border:2px solid var(--line);color:var(--ink)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;font-size:15px;color:var(--muted)}
+.facts strong{color:var(--ink)}
+/* sections */
+section.block{padding:72px 0;border-top:1px solid var(--line)}
+section.tint{background:var(--mist)}
+.block h2{font-size:clamp(28px,4vw,38px);margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;margin:0 0 40px}
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px}
+.svc{padding:20px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:14px 1fr;gap:16px}
+.svc::before{content:"";width:6px;height:26px;margin-top:4px;border-radius:3px;background:var(--teal)}
+.svc h3{font-size:18px;margin-bottom:4px}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;counter-reset:s}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--blue);color:var(--btn-text);font-family:'Sora',sans-serif;font-weight:700;margin-bottom:16px}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted)}
+.trust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.trust div{border-left:4px solid var(--teal);padding-left:20px}
+.trust h3{font-size:19px;margin-bottom:6px}
+.trust p{margin:0;color:var(--muted)}
+.gstin{font-family:'Sora',sans-serif;color:var(--ink);font-size:18px;letter-spacing:.04em}
+.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.contact ul{list-style:none;padding:0;margin:0}
+.contact li{padding:14px 0;border-bottom:1px solid var(--line)}
+.contact li span{display:block;font-size:14px;color:var(--muted)}
+.contact li a{font-size:19px;font-weight:600;text-decoration:none}
+footer{padding:32px 0;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+@media (max-width:760px){
+  .hero{padding:32px 0 64px}
+  .hero .mark{width:300px;height:300px;right:-120px;top:-10px;opacity:.18}
+  .services,.trust,.contact{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .top a.call{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap top">
+    <a class="brand" href="#" aria-label="Neuvorix Technologies home">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><polygon points="14,0 50,0 106,120 70,120" fill="var(--teal)"/><rect x="0" y="0" width="32" height="120" rx="7" fill="var(--blue)"/><rect x="88" y="0" width="32" height="120" rx="7" fill="var(--blue)"/></svg>
+      <div><b>NEUVORIX</b><span>TECHNOLOGIES</span></div>
+    </a>
+    <a class="call" href="tel:+918377899189">Call 83778 99189</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><polygon points="14,0 50,0 106,120 70,120" fill="var(--teal)"/><rect x="0" y="0" width="32" height="120" rx="7" fill="var(--blue)"/><rect x="88" y="0" width="32" height="120" rx="7" fill="var(--blue)"/></svg>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>IT problems fixed remotely, wherever your office is.</h1>
+        <p>Neuvorix Technologies looks after email, networks, security and everyday IT issues for small offices, shops and clinics across India, without waiting for someone to visit.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/918377899189?text=Hi%20Neuvorix%2C%20I%20need%20IT%20support">Message us on WhatsApp</a>
+          <a class="btn secondary" href="#services">See our services</a>
+        </div>
+        <div class="facts">
+          <span><strong>Remote support</strong> anywhere in India</span>
+          <span><strong>GST-registered</strong> business</span>
+          <span><strong>Monthly or annual</strong> support plans</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint" id="services">
+    <div class="wrap">
+      <h2>What we take care of</h2>
+      <p class="lead">Most office IT problems can be solved over a secure remote session in under an hour. These are the areas we handle every day.</p>
+      <div class="services">
+        <div class="svc"><div><h3>Microsoft 365 and Google Workspace</h3><p>New email setup, moving mailboxes from Gmail or other hosts, users, licences and shared mailboxes.</p></div></div>
+        <div class="svc"><div><h3>Email problems and domain security</h3><p>Mail going to spam, delivery failures, and SPF, DKIM and DMARC so no one can send fake emails in your name.</p></div></div>
+        <div class="svc"><div><h3>Network setup and troubleshooting</h3><p>Slow or dropping Wi-Fi, switches, routers and firewalls configured and fixed.</p></div></div>
+        <div class="svc"><div><h3>Endpoint security</h3><p>Antivirus, device protection and security policies for every laptop and desktop in the office.</p></div></div>
+        <div class="svc"><div><h3>Software licences and subscriptions</h3><p>Genuine licences for office software, mailboxes and security tools, set up and renewed on time.</p></div></div>
+        <div class="svc"><div><h3>Laptop, desktop and printer support</h3><p>Windows issues, software installs, printer and scanner connections, everyday fixes.</p></div></div>
+        <div class="svc"><div><h3>Data backup and recovery</h3><p>Automatic backups for important files and email, and help getting them back when something goes wrong.</p></div></div>
+        <div class="svc"><div><h3>CCTV and network cabling</h3><p>Installation through our partner technicians, in select locations.</p></div></div>
+        <div class="svc"><div><h3>Monthly and annual support contracts</h3><p>One fixed fee covers remote troubleshooting and configuration for your whole office. Hardware repair is not included.</p></div></div>
+        <div class="svc"><div><h3>Quick one-time fixes</h3><p>Not ready for a contract? Get a single issue solved remotely at a nominal charge.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="wrap">
+      <h2>How remote support works</h2>
+      <p class="lead">No technician visit, no waiting. You stay in control of your computer the whole time.</p>
+      <ol class="steps">
+        <li><h3>Tell us the problem</h3><p>Send a WhatsApp message, call, or email with a short description or a screenshot.</p></li>
+        <li><h3>We connect securely</h3><p>With your permission, we join your screen through a secure remote session at a time that suits you.</p></li>
+        <li><h3>Fixed and explained</h3><p>We solve the issue, tell you what caused it, and share a GST invoice for the work.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block tint" id="trust">
+    <div class="wrap">
+      <h2>A registered business you can verify</h2>
+      <p class="lead">Before you share access to your systems, you should know who you are dealing with.</p>
+      <div class="trust">
+        <div>
+          <h3>GST registered</h3>
+          <p class="gstin">07GUEPP8155F1Z9</p>
+          <p>Check it yourself on the <a href="https://services.gst.gov.in/services/searchtp">GST portal taxpayer search</a>. It shows Neuvorix Technologies as an active registration.</p>
+        </div>
+        <div>
+          <h3>MSME (Udyam) registered</h3>
+          <p>Registered as a micro enterprise with the Ministry of MSME, Government of India.</p>
+        </div>
+        <div>
+          <h3>Enterprise experience</h3>
+          <p>Our team has over ten years of hands-on experience running IT for larger organisations, now offered to small businesses.</p>
+        </div>
+        <div>
+          <h3>Your data stays yours</h3>
+          <p>We connect only with your permission, never keep your passwords, and document every change we make.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap contact">
+      <div>
+        <h2>Get your IT issue sorted</h2>
+        <p class="lead">Message us with what's going wrong. We'll reply with how we can help and what it will cost before any work starts.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/918377899189?text=Hi%20Neuvorix%2C%20I%20need%20IT%20support">Message us on WhatsApp</a>
+          <a class="btn secondary" href="mailto:neuvorixtechnologies@gmail.com">Send an email</a>
+        </div>
+      </div>
+      <ul>
+        <li><span>Phone and WhatsApp</span><a href="tel:+918377899189">83778 99189</a></li>
+        <li><span>Phone</span><a href="tel:+919971967602">99719 67602</a></li>
+        <li><span>Phone</span><a href="tel:+917983562093">79835 62093</a></li>
+        <li><span>Email</span><a href="mailto:neuvorixtechnologies@gmail.com">neuvorixtechnologies@gmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Neuvorix Technologies, New Delhi, India</span>
+    <span>GSTIN 07GUEPP8155F1Z9</span>
+  </div>
+</footer>
+
+</body>
+</html>
